@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(backgrround1.jpg) no-repeat center /cover;
+    height: 100vh;
+    padding:50px 5% ;
+}
+
+.container{
+    position: relative;
+    height: 100%;
+    background: rgba(255,255,255,.1);
+    border:3px solid rgba(255,255,255,.2);
+    border-radius: 30px;
+    backdrop-filter: blur(30px);
+}
+
+header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 35px;
+    border-bottom: 3px solid transparent;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    border-color: #fff;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+    padding: 50px 5% 0;
+    color: #fff;
+}
+
+.home-detail h1{
+    font-size: 50px;
+    line-height: 1;
+}
+
+.home-detail h2{
+    font-size: 32px;
+}
+
+.home-detail p{
+    margin: 10px 0 20px;
+}
+
+.home-detail .donwload-social{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+    font-size: 17px;
+}
+
+.btn:hover{
+    background: transparent;
+    color: #fff;
+    box-shadow: none;
+}
+
+.home-detail .social-icon{
+    margin-left: 20px;
+
+}
+
+.home-detail .social-icon a{
+    display: inline-flex;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 0 8px;
+    transition: .3s;
+}
+
+.home-detail .social-icon a:hover{
+    background: #fff;
+    color: #333;
+    box-shadow: 0 0 10px #fff;
+}
+
+.home-img .img-box{
+    position: relative;
+    width: 28vw;
+    height: 28vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #fff;
+    overflow: hidden;
+}
+
+.home-img .img-box IMG{
+    position: absolute;
+    top: 30PX;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
